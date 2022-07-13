@@ -64,12 +64,15 @@ class Compute
         long min = Long.MAX_VALUE;
         long max = Long.MIN_VALUE;
         
-        // Arr
+        Arrays.sort(a);
         
-        for(int i=0;i<n;i++){
-            if(a[i] > max) max = a[i];
-            if(a[i] < min) min = a[i];
-        }
+        min = a[0];
+        max = a[a.length-1];
+        
+        // for(int i=0;i<n;i++){
+        //     if(a[i] > max) max = a[i];
+        //     if(a[i] < min) min = a[i];
+        // }
         
         return new pair(min,max);
     }
