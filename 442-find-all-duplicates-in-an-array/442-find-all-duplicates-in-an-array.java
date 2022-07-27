@@ -7,7 +7,6 @@ class Solution {
             if(set.contains(x))
             {
                 al.add(x);
-                set.remove(x);
             }
             else
             {
