@@ -15,7 +15,6 @@ class Solution {
             }
         }
         
-        Collections.sort(al);
         return al;
     }
 }
